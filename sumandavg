@@ -1,0 +1,12 @@
+echo "first number: "
+read a
+echo "Second number: "
+read b
+echo "third number: "
+read c
+echo "forth number: "
+read d
+echo "fifth number: "
+read e
+result= echo $a $b $c $d $e | awk '{print $a+$b+$c+$d+$e}'
+echo "The sum of these numbers is: " $result
